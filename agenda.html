@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/logopaud.png" type="image/x-icon" />
+  <title>Program - PAUD Az-Zahra</title>
+ <!-- bootstrap core css -->
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+ <!-- progress bar style -->
+ <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+ <!-- fonts style -->
+ <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+ <!-- font awesome stylesheet -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ <!-- Custom styles for this template -->
+ <link href="css/style.css" rel="stylesheet" />
+ <!-- responsive style -->
+ <link href="css/responsive.css" rel="stylesheet" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <!-- Lightbox2 CSS -->
+   <link href="css/lightbox.min.css" rel="stylesheet" />
+  <style>
+    .popover-body {
+      max-width: 200px; /* Sesuaikan kebutuhan */
+    }
+    .popover-info {
+      border: 2px solid #ccc; /* Ubah warna dan ketebalan sesuai keinginan */
+      padding: 10px;
+      border-radius: 5px; /* Untuk menambahkan sudut bulat */
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item {
+      flex: 1 1 calc(33.333% - 30px);
+      position: relative;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-item {
+        flex: 1 1 calc(50% - 30px);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .gallery-item {
+        flex: 1 1 calc(100% - 30px);
+      }
+    }
+    /* Gaya untuk tombol panah */
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px; /* Jarak dari bawah halaman */
+    left: 20px; /* Jarak dari kiri halaman */
+    z-index: 1000;
+    display: none; /* Sembunyikan secara default */
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .scroll-to-top:hover {
+    background-color: #0056b3;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="top_container sub_pages">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="">
+            <span>Az Zahra</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="tentang.html"> Tentang </a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="agenda.html"> Agenda </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="galeri.html">Galeri</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kontak.html">Kontak</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="questions.html">Questions?</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <!-- end header section -->
+
+  <br>
+<!-- Agenda section -->
+<section class="agenda_section layout_padding-bottom">
+  <div class="container">
+    <br>
+    <h2 class="main-heading">Agenda dan Kegiatan Sekolah</h2>
+    <br>
+    <p class="text-center">Beberapa Kegiatan yang ada di Az Zahra</p>
+    <div class="agenda-container layout_padding2">
+      <div class="accordion" id="agendaAccordion">
+        <div class="card">
+          <div class="card-header" id="headingManasik">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseManasik" aria-expanded="true" aria-controls="collapseManasik">
+                Manasik Haji
+              </button>
+            </h2>
+          </div>
+          <div id="collapseManasik" class="collapse show" aria-labelledby="headingManasik" data-parent="#agendaAccordion">
+            <div class="card-body">
+              <img class="img-fluid mb-3" src="images/manasik.jpg" alt="Manasik Haji">
+              <p>Kegiatan yang diadakan untuk memberikan pemahaman dan simulasi tentang pelaksanaan ibadah haji kepada anak.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingOuting">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOuting" aria-expanded="false" aria-controls="collapseOuting">
+                Outing Class
+              </button>
+            </h2>
+          </div>
+          <div id="collapseOuting" class="collapse" aria-labelledby="headingOuting" data-parent="#agendaAccordion">
+            <div class="card-body">
+              <img class="img-fluid mb-3" src="images/outingpicc.jpg" alt="Outing Class">
+              <p>Kegiatan belajar mengajar yang dilakukan di luar kelas untuk memberikan pengalaman bermain sambil belajar yang berbeda bagi anak.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingPosyandu">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsePosyandu" aria-expanded="false" aria-controls="collapsePosyandu">
+                Posyandu
+              </button>
+            </h2>
+          </div>
+          <div id="collapsePosyandu" class="collapse" aria-labelledby="headingPosyandu" data-parent="#agendaAccordion">
+            <div class="card-body">
+              <img class="img-fluid mb-3" src="images/posyanpic.jpg" alt="Posyandu">
+              <p>Paud Az Zahra telah terintegrasi pelayanan kesehatan yang melibatkan program kesehatan ibu dan anak.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingWisuda">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseWisuda" aria-expanded="false" aria-controls="collapseWisuda">
+                Wisuda
+              </button>
+            </h2>
+          </div>
+          <div id="collapseWisuda" class="collapse" aria-labelledby="headingWisuda" data-parent="#agendaAccordion">
+            <div class="card-body">
+              <img class="img-fluid mb-3" src="images/wisudaremovebg-removebg-preview.png" alt="Wisuda">
+              <p>Kegiatan yang dilakukan untuk merayakan kelulusan anak setelah menyelesaikan masa bermain sambil belajar di sekolah. Acara ini biasanya diadakan dengan seremonial khusus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end agenda section -->
+
+<style>
+  /* CSS tambahan untuk membatasi ukuran card pada tampilan laptop */
+  @media (min-width: 992px) {
+    .agenda-container .card {
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+    .agenda-container .accordion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+<section class="gallery_section layout_padding">
+  <div class="container">
+    <h2 class="main-heading text-center">Kalender Akademik</h2>
+    <br>
+    <div class="gallery">
+      <div class="gallery-item">
+        <a href="images/kaldik.jpg" data-lightbox="gallery" data-title="Photo 1"><img src="images/kaldik.jpg" alt="Photo 1"></a>
+      </div>
+    </section>
+
+<div class="about_img-box">
+  <img src="images/kids.png" alt="" class="img-fluid w-100">
+</div>
+
+<!-- landing section -->
+<section class="landing_section layout_padding">
+  <div class="container">
+    <h2 class="main-heading">Kunjungi</h2>
+    <h2 class="main-heading number_heading">Media Sosial Az Zahra</h2>
+    <br>
+    <div class="social_icons text-center">
+      <a href="https://www.instagram.com/az_zahraaaa11?igsh=MzI1Y2xzZTk0Nm4="><i class="fab fa-instagram fa-3x mr-3"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61560867717640"><i class="fab fa-facebook fa-3x mr-3"></i></a>
+      <a href="https://www.youtube.com/@AzZahraOfficial-iu9fv"><i class="fab fa-youtube fa-3x"></i></a>
+    </div>
+  </div>
+</section>
+<!-- end landing section -->
+
+<h2 class="main-heading">
+  Alamat
+</h2>
+<p class="text-center">
+  Jl. Pasir Konci Poncol No.28, Pasirsari, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530
+</p>
+
+<!-- Tombol panah ke atas -->
+<div id="scrollToTop" class="scroll-to-top">
+  <i class="fas fa-chevron-up"></i>
+</div>
+
+<!-- footer section -->
+<section class="container-fluid footer_section">
+  <p>
+    Copyright &copy;Az-Zahra Official
+      <a href="#">All Right Reserved</a>
+  </p>
+</section>
+<!-- footer section -->
+
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover({
+      trigger: 'focus',
+      placement: 'auto',
+      html: true,
+      template: '<div class="popover popover-info" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
+    });
+    $('.info-link').on('click', function (e) {
+      e.preventDefault();
+      $(this).popover('toggle');
+    });
+  });
+</script>
+<script src="js/lightbox.min.js"></script>
+<script>
+  // Fungsi untuk menampilkan tombol panah saat scroll
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    var scrollToTopBtn = document.getElementById("scrollToTop");
+
+    // Tampilkan tombol saat scroll lebih dari 500px dari atas
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  }
+
+  // Fungsi untuk kembali ke atas saat tombol panah diklik
+  document.getElementById("scrollToTop").addEventListener("click", function() {
+    document.body.scrollTop = 0; // Untuk Safari
+    document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, IE, dan Opera
+  });
+</script>
+</body>
+
+</html>
